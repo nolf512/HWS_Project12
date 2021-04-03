@@ -37,6 +37,14 @@ class ViewController: UIViewController {
 
          */
         
+        let savedInt = defaults.integer(forKey: "Age")
+        let savedBool = defaults.bool(forKey: "UseFaceID")
+        
+        let saveArray = defaults.object(forKey: "SavedArray") as? [String] ?? [String]()
+        let savedDict = defaults.object(forKey: "SavedDictionary") as? [String: String] ?? [String: String]()
+        
+//        let savedArray2 = defaults.array(forKey: )
+        
     }
 
 
